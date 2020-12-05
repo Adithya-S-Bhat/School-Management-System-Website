@@ -9,3 +9,5 @@ In the WebTech_Miniproject Directory,
 1. Type "npm run client" - to start the react client.
 2. Type "npm run dev" - to start the development server which is the backend server
 3. Type "npm run server"- to start the socket.io
+
+Once, all the servers are setup go to port 5000 in the browser.
