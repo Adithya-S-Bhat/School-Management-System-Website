@@ -1,0 +1,4 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+<a href="http://<%= host %>:3000/?user=<%= user.name %>&email=<%= user.email %>&institution:<%= user.institution%>&studentorteacher=<%= user.studentorteacher %>" target="_self">User</a><br/>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>

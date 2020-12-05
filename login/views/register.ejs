@@ -1,0 +1,78 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3"><a href="/"><image src="/static/images/logo_png.png" height="100px" width="100px"alt="logo"></i></image></a></h1>
+      <h3 class="text-center mb-3">
+        <i class="fas fa-user-plus"></i> Register
+      </h3>
+      <%- include('./partials/messages.ejs') %>
+      <form action="/users/register" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="institution">Institution Name</label>
+          <input
+            type="text"
+            id="institution"
+            name="institution"
+            class="form-control"
+            placeholder="Enter Institution Name"
+            value="<%= typeof institution != 'undefined' ? institution : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <input type="radio" id="student" name="studentorteacher" value="student">
+          <label for="student">Student</label><br>
+          <input type="radio" id="teacher" name="studentorteacher" value="teacher">
+          <label for="teacher">Teacher</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Register
+        </button>
+      </form>
+      <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+    </div>
+  </div>
+</div>
