@@ -4,11 +4,11 @@ const server = require("http").createServer(app,function(req,res){
   var name=url.parse(req.url,true).query("name")
 });
 const url=require("url")
-const io = require("socket.io")(server
-,{cors: {
-  origin: '*',//192.168.43.98 or window.location.host"http://localhost:3000"
+const io = require("socket.io")(server,
+  {cors: {
+  origin: '*',//192.168.43.98 or window.location.host or "http://localhost:3000"
   methods: ["GET", "POST"]
-}
+  }
 })
 const PORT = process.env.PORT||4000;
 const NEW_CHAT_MESSAGE_EVENT = "newChatMessage";
