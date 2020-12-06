@@ -5,7 +5,7 @@ Initial Setup:
 
 
 Once the above initial setup is done,
-In the WebTech_Miniproject Directory,
+In the WebTech_Miniproject Directory open 3 terminals and execute below commands,
 1. Type "npm run client" - to start the react client.
 2. Type "npm run dev" - to start the development server which is the backend server
 3. Type "npm run server"- to start the socket.io
