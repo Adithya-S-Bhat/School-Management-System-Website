@@ -6,6 +6,8 @@ const session=require('express-session');
 const passport = require("passport");
 const app=express();
 
+app.set('trust proxy',1)
+
 //passport config
 require('./config/passport')(passport)
 
