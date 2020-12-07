@@ -1,6 +1,6 @@
 Initial Setup:
 1. Navigate to "/login" in cmd.
-2. Type "npm install" to install all the dependencies realted to the login web app.
+2. Type "npm install" to install all the dependencies related to the login web app.
 3. Then, navigate to "/user" and "/user/server" in cmd & repeat the above step.
 
 
